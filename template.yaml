@@ -4,7 +4,7 @@ kind: Template
 metadata:
   name: v1beta2-demo
   title: Terraform project template
-  description: scaffolder v1beta2 template demo
+  description: a simple terraform template
 spec:
   owner: viniktw
   type: library
