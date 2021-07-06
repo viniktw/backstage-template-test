@@ -40,9 +40,13 @@ spec:
       name: Fetch Base
       action: fetch:cookiecutter
       input:
-        url: ./template
+        url: ./skeleton
         values:
           name: '{{ parameters.name }}'
+          component_id: '{{ parameters.component_id }}'
+          description: '{{ parameters.description }}'
+          destination: '{{ parseRepoUrl parameters.repoUrl }}'
+          owner: '{{ parameters.owner }}'
 
     - id: fetch-docs
       name: Fetch Docs
